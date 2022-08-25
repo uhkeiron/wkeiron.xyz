@@ -1,0 +1,58 @@
+:root {
+    --darkgrey: #2a2c30;
+    --blurple: #5865f2;
+    --green: #57f287;
+    --green-secondary: ##77de54;
+    --yellow: #fee75c;
+    --fuchsia: #eb459e;
+    --red: #ed4245;
+    --white: #ffffff;
+    --black: #000000
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box
+}
+
+input,
+button,
+a {
+    outline: none
+}
+
+*:focus {
+    outline: none;
+    border: none
+}
+
+html,
+body {
+    background-image: url(../assets/Illustration22.png);
+    font-family: open sans, montserrat, Arial, Helvetica, sans-serif;
+
+    color: var(--white)
+}
+
+ul,
+li {
+    list-style: none
+}
+
+body.menu-open {
+    overflow-y: hidden
+}
+
+.text-shadow {
+    text-shadow: 1px 1px 1.5px rgba(0, 0, 0, .2)
+}
+
+.badge {
+    font-size: .6rem;
+    padding: 1px;
+    border-radius: 10px;
+    margin: 2.5px;
+    margin-top: -140px;
+    margin-right: 1px
+}

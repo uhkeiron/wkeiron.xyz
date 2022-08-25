@@ -1,0 +1,536 @@
+.typing h1 {
+    color: #fff;
+    font-family: open sans, lato, Arial, Helvetica, sans-serif;
+    overflow: hidden;
+    border-right: .12em solid #bc4c4a;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .13em;
+    animation: typing 1.5s steps(30, end), blink-caret .3s step-end infinite
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: #9c3c48
+    }
+}
+
+.typing-2 p {
+    color: #fff;
+    font-family: open sans, lato, Arial, Helvetica, sans-serif;
+    overflow: hidden;
+    border-right: .12em solid #bc4c4a;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .13em;
+    animation: typing-2 1.5s steps(30, end), blink-caret-2 .9s step-end infinite
+}
+
+@keyframes typing-2 {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+@keyframes blink-caret-2 {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: #9c3c48
+    }
+}
+
+#typing-text {
+    width: 14%;
+    height: auto;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 100px;
+    max-width: 1000px;
+    z-index: 1 !important
+}
+
+#header-text {
+    width: 90%;
+    height: auto;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 100px;
+    max-width: 1000px;
+    z-index: 1 !important
+}
+
+#header-text>h1 {
+    font-size: 3rem;
+    color: #fff;
+    font-family: open sans, lato, Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    line-height: 3rem;
+    margin: 10px 0
+}
+
+#header-text>h4 {
+    font-size: 1rem;
+    color: #fff;
+    font-family: montserrat, open sans, lato, Arial, Helvetica, sans-serif;
+    font-weight: 400
+}
+
+.header-buttons {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-top: 20px
+}
+
+.header-buttons>a {
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 3px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+    background-color: var(--blurple);
+    transition: transform 250ms;
+    z-index: 1
+}
+
+.header-buttons>a:first-child {
+    background-color: #77de54
+}
+
+@media(max-width:970px) {
+    body {
+        background-position: center;
+        background-size: cover
+    }
+
+    #header-text {
+        width: 100%;
+        text-align: left;
+        padding-left: 20px;
+        padding-right: 20px
+    }
+
+    #typing-text {
+        width: 79%;
+        text-align: left;
+        padding-left: 10px;
+        padding-right: 10px
+    }
+
+    #header-text>h1 {
+        font-size: 2.5rem;
+        line-height: 2.5rem
+    }
+
+    #header-text>h4 {
+        font-size: .8rem
+    }
+
+    .header-buttons {
+        justify-content: flex-start
+    }
+
+    .header-buttons>a {
+        margin: 5px
+    }
+
+    #typing-text {
+        width: 55%
+    }
+}
+
+@media(max-width:768px) {
+    #header-text {
+        width: 100%;
+        text-align: left;
+        padding-left: 20px;
+        padding-right: 20px
+    }
+
+    #header-text>h1 {
+        font-size: 2.5rem;
+        line-height: 2.5rem
+    }
+
+    #header-text>h4 {
+        font-size: .8rem
+    }
+
+    .header-buttons {
+        justify-content: flex-start
+    }
+
+    .header-buttons>a {
+        margin: 5px
+    }
+}
+
+#header-wave {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    margin-bottom: -2px
+}
+
+#team {
+    padding: 90px 20px;
+    padding-bottom: 80px
+}
+
+@media(max-width:368px) {
+    #team {
+        padding: 90px 20px
+    }
+}
+
+@media(max-width:568px) {
+    #team {
+        padding: 140px 20px
+    }
+}
+
+.team-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 366px;
+    margin: 0 auto
+}
+
+.team-member {
+    --bg-image: linear-gradient(to top, var(--black), var(--black));
+    position: relative;
+
+    padding: 90px 196px 399px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    width: 10%;
+    max-width: 361px;
+    min-width: 200px;
+    height: 340px;
+    box-shadow: 0 0 35px 2px rgba(255, 255, 255, 0.612);
+    border-radius: 5px;
+    overflow: hidden
+}
+
+.about-me {
+    --bg-image: linear-gradient(to top, var(--black), var(--black));
+    position: absolute;
+    margin: 0;
+    padding: 50px 20px 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, .02);
+    width: 100%;
+    background-size: center;
+    margin-top: 360px;
+    max-width: 300px;
+    min-width: 300px;
+    height: 0;
+    border-radius: 5px;
+    overflow: hidden
+}
+
+.team-member * {
+    z-index: 1
+}
+
+.team-member::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 130px;
+    top: 0;
+    background-image: url(../assets/tzxyqg62wik81.gif);
+    background-size: cover;
+    background-position: center
+}
+
+@media(max-width:420px) {
+    .about-me {
+        --bg-image: linear-gradient(to top, var(--black), var(--black));
+        position: absolute;
+        margin: 0;
+        padding: 50px 20px 130px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(255, 255, 255, .02);
+        width: 100%;
+        background-size: center;
+        margin-top: 380px;
+        height: 0;
+        border-radius: 5px;
+        overflow: hidden
+    }
+
+    .team-member .description {
+        font-size: .7rem;
+        color: rgba(255, 255, 255, .7);
+        text-align: center;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        margin-right: 2px;
+        flex-grow: 1
+    }
+
+    #typing-text {
+        width: 65%
+    }
+}
+
+.team-member>.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%
+}
+
+.team-member>.header>img {
+    border-radius: 50%;
+    margin-bottom: 0;
+    width: 110px;
+    height: 110px;
+    margin-top: 30px;
+    margin-right: 220px;
+    border: 5px solid #18191c
+}
+
+.team-member>.header>.name {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    font-weight: 600;
+    margin-right: 175px
+}
+
+.team-member>.header>.name>span {
+    font-size: .8rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, .6)
+}
+
+.team-member .badges {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    margin-top: 1px
+}
+
+.team-member .description {
+    font-size: .7rem;
+    color: rgba(255, 255, 255, .7);
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-right: 2px;
+    flex-grow: 1
+}
+
+.social-medias {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 45px;
+    margin-top: 5px
+}
+
+.social-medias>a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50%;
+    margin: 5px 3px;
+    margin-top: -12px;
+    padding: 5px
+}
+
+.social-medias-text>a>span {
+    color: #fff;
+    font-family: open sans, lato, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    border-radius: 50%;
+    margin: 5px 4px;
+    padding: 2.5px
+}
+
+.social-text>h1 {
+    position: absolute;
+    color: #fff;
+    font-family: open sans, lato, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    margin: 5px 4px;
+    margin-top: 10px;
+    margin-left: -40px;
+    padding: 2.5px
+}
+
+.team-members .about-me-text>h1 {
+    position: absolute;
+    color: #fff;
+    font-family: Arial;
+    font-size: 9px;
+    margin: 5px 4px;
+    margin-top: 345px;
+    margin-left: -340px;
+    padding: 2.5px;
+    color: rgba(255, 255, 255, .2)
+}
+
+.about-text {
+    font-family: open sans, lato, Arial, Helvetica, sans-serif;
+    display: flex;
+    width: 297px;
+    height: 178px;
+    overflow-y: scroll;
+    position: absolute;
+    text-align: justify;
+    color: #fff;
+    font-size: 9px;
+    margin: 5px 4px;
+    margin-top: 363px;
+    margin-left: -337px;
+    padding: 2px
+}
+
+.about-text::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 8px;
+    background-color: transparent
+}
+
+.about-text::-webkit-scrollbar-thumb {
+    background: #9c3c48;
+    border-radius: 8px
+}
+
+@media(max-width:420px) {
+    .team-members .about-me-text>h1 {
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        position: relative;
+        color: rgba(255, 255, 255, .2);
+        font-family: Arial;
+        font-size: 9px;
+        margin: 5px 4px;
+        margin-top: -229px;
+        margin-right: 242px;
+        padding: 2.5px
+    }
+
+    .about-text {
+        font-family: open sans, lato, Arial, Helvetica, sans-serif;
+        display: flex;
+        width: 297px;
+        height: 178px;
+        overflow-y: scroll;
+        position: absolute;
+        color: #fff;
+        font-size: 9px;
+        margin: 5px;
+        margin-top: -5px;
+        padding: 2px
+    }
+
+    .about-text>div>h1::-webkit-scrollbar {
+        width: 10px;
+        border-radius: 8px;
+        background-color: transparent
+    }
+
+    .about-text>div>h1::-webkit-scrollbar-thumb {
+        background: #9c3c48;
+        border-radius: 8px
+    }
+}
+
+@media(max-width:639px) {
+    footer {
+        margin-top: 280px;
+        width: 100%
+    }
+
+    .copyright {
+        font-size: .8rem;
+        text-align: center;
+        margin-top: 120px;
+        width: 100%;
+        padding: 5px 20px
+    }
+}
+
+footer {
+    margin-top: 192px;
+    width: 100%
+}
+
+.copyright {
+    color: #fff;
+    padding-bottom: 10px;
+    font-size: .8rem;
+    text-align: center;
+    margin-top: 190px;
+    width: 100%;
+    padding: 5px 20px
+}
+
+.floating {
+    animation-name: floating;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out
+}
+
+@keyframes floating {
+    0% {
+        transform: translate(0, 0px)
+    }
+
+    50% {
+        transform: translate(0, 8px)
+    }
+
+    100% {
+        transform: translate(0, -0px)
+    }
+}
